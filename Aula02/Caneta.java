@@ -1,34 +1,34 @@
-package Aula3;
-
-public class Caneta2 {
+package Aula02;
+public class Caneta {
     //Atribuitos
-    public String cor;
-    public String marca;
-    private int carga;
-    private float ponta;
-    private Boolean tampada;
+    String cor;
+    String marca;
+    int carga;
+    float ponta;
+    Boolean tampada;
 
     //Metodos
-    public void rabiscar(){
+    void rabiscar(){
         if(this.tampada == true)
             System.out.println("Destampe a caneta. ");
-        /*else if(carga == 0)
-            System.out.println("Caneta sem tinta");*/
+        else if(carga == 0)
+            System.out.println("Caneta sem tinta");
         else{
             System.out.println("Rabiscado na cor: " + cor);
             carga -= 10;
         }
             
     }
-    public void tampar(){
-        this.tampada = true;
-
+    Boolean tampar(){
+        tampada = true;
+        return tampada;
     }
-    public void destampar(){
-        this.tampada= false;   
+    Boolean destampar(){
+        tampada= false;   
+        return tampada;
     }
     //Estado
-    public void status(){
+    void status(){
         System.out.println("Cor: "+this.cor);
         System.out.println("Marca: "+this.marca);
         System.out.println("Carga: "+this.carga);

@@ -1,4 +1,4 @@
-package Aula2;
+package Aula02;
 public class UsaCaneta {
     public static void main(String[] args) {
         Caneta c1 = new Caneta();

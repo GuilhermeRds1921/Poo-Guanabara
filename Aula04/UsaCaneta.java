@@ -1,4 +1,4 @@
-package Aula4;
+package Aula04;
 
 public class UsaCaneta {
     public static void main(String[] args) {

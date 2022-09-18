@@ -1,4 +1,4 @@
-package Aula4;
+package Aula04;
 
 public class Caneta3 {
     //Atributos
