@@ -97,15 +97,15 @@ package Aula08;
     @Override
     public void apresentar() {
         System.out.println();
-        System.out.println(this.getNome());
-        System.out.println(this.getNacionalidade());
-        System.out.println(this.getIdade());
-        System.out.println(this.getAltura());
-        System.out.println(this.getPeso());
-        System.out.println(this.getCategoria());
-        System.out.println(this.getVitoria());
-        System.out.println(this.getDerrota());
-        System.out.println(this.getEmpate());
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("Nação: " + this.getNacionalidade());
+        System.out.println("Idade: " + this.getIdade());
+        System.out.println("Altura: " + this.getAltura());
+        System.out.println("Peso: " + this.getPeso());
+        System.out.println("Categoria: " + this.getCategoria());
+        System.out.println("Vitorias: " + this.getVitoria());
+        System.out.println("Derrotas: " + this.getDerrota());
+        System.out.println("Empate: " + this.getEmpate());
         System.out.println();
     }
 

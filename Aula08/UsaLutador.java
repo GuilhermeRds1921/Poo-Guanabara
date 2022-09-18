@@ -8,7 +8,8 @@ public class UsaLutador {
          lutadores[2] = new Lutador("Think", "ru", 40, 1.95f, 100, 3, 3, 3);
         
          Luta ufc = new Luta(lutadores[0], lutadores[1]);
-         ufc.marcarLuta(lutadores[0], lutadores[1]);
+
+         ufc.marcarLuta();
          ufc.lutar();
 
         lutadores[0].status();
