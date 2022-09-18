@@ -60,23 +60,24 @@ public class Luta {
     public void lutar(){
         desafiado.apresentar();
         desafiante.apresentar();
-        Random vencedor = new Random();
-
+        Random rn = new Random();
+        int vencedor = rn.nextInt(3);
         switch(vencedor){
             case 0:
                 System.out.println("Empatou ");
                 desafiado.empatarLuta();
                 desafiante.empatarLuta();
+                break;
             case 1:
                 System.out.println(desafiante.getNome() + " Venceu luta. ");
                 desafiante.ganharLuta();
                 desafiado.perderLuta();
-                
+                break;
             case 2:
             System.out.println(desafiado.getNome() + " Venceu a luta. ");
             desafiado.ganharLuta();
             desafiante.perderLuta();
-
+            break;
         }
 
     }

@@ -111,12 +111,15 @@ package Aula08;
 
     @Override
     public void status() {
-        System.out.println(this.getNome());
-        System.out.println(this.getCategoria());
-        System.out.println(this.getVitoria());
-        System.out.println(this.getDerrota());
-        System.out.println(this.getEmpate());
+        System.out.println();
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("Categoria: " +this.getCategoria());
+        System.out.println("Vitorias: " +this.getVitoria());
+        System.out.println("Derrotas: " +this.getDerrota());
+        System.out.println("Empates: " +this.getEmpate());
+        System.out.println();
     }
+
 
     @Override
     public void ganharLuta() {
